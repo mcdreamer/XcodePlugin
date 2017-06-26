@@ -1,0 +1,589 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		493ABCF31F019994000C01E4 /* SourceEditorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493ABCF21F019994000C01E4 /* SourceEditorExtension.swift */; };
+		496037D71D84AFCB008AC9E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496037D61D84AFCB008AC9E1 /* AppDelegate.swift */; };
+		496037DC1D84AFCB008AC9E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 496037DB1D84AFCB008AC9E1 /* Assets.xcassets */; };
+		496037DF1D84AFCB008AC9E1 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 496037DD1D84AFCB008AC9E1 /* MainMenu.xib */; };
+		496037ED1D84AFE8008AC9E1 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 496037EC1D84AFE8008AC9E1 /* Cocoa.framework */; };
+		496037F61D84AFE8008AC9E1 /* SourceEditorCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496037F51D84AFE8008AC9E1 /* SourceEditorCommand.swift */; };
+		496037FA1D84AFE8008AC9E1 /* MCDreamerExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 496037EA1D84AFE8008AC9E1 /* MCDreamerExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		49E9A1821D98242000DD2363 /* MCDreamerPluginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E9A1811D98242000DD2363 /* MCDreamerPluginTests.swift */; };
+		49E9A18B1D98249A00DD2363 /* PluginCommandHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E9A18A1D98249A00DD2363 /* PluginCommandHandler.swift */; };
+		49E9A18C1D98249A00DD2363 /* PluginCommandHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E9A18A1D98249A00DD2363 /* PluginCommandHandler.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		496037F81D84AFE8008AC9E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 496037CA1D84AFCA008AC9E1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 496037E91D84AFE8008AC9E1;
+			remoteInfo = MCDreamerExtension;
+		};
+		49E9A1841D98242000DD2363 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 496037CA1D84AFCA008AC9E1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 496037D11D84AFCA008AC9E1;
+			remoteInfo = MCDreamerPlugin;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		496037FE1D84AFE8008AC9E1 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				496037FA1D84AFE8008AC9E1 /* MCDreamerExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		493ABCF21F019994000C01E4 /* SourceEditorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SourceEditorExtension.swift; sourceTree = "<group>"; };
+		496037D21D84AFCB008AC9E1 /* MCDreamerPlugin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MCDreamerPlugin.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		496037D61D84AFCB008AC9E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		496037DB1D84AFCB008AC9E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		496037DE1D84AFCB008AC9E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		496037E01D84AFCB008AC9E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		496037EA1D84AFE8008AC9E1 /* MCDreamerExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MCDreamerExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		496037EC1D84AFE8008AC9E1 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		496037F01D84AFE8008AC9E1 /* MCDreamerExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MCDreamerExtension.entitlements; sourceTree = "<group>"; };
+		496037F51D84AFE8008AC9E1 /* SourceEditorCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorCommand.swift; sourceTree = "<group>"; };
+		496037F71D84AFE8008AC9E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49E9A17F1D98242000DD2363 /* MCDreamerPluginTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MCDreamerPluginTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		49E9A1811D98242000DD2363 /* MCDreamerPluginTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCDreamerPluginTests.swift; sourceTree = "<group>"; };
+		49E9A1831D98242000DD2363 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49E9A18A1D98249A00DD2363 /* PluginCommandHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PluginCommandHandler.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		496037CF1D84AFCA008AC9E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		496037E71D84AFE8008AC9E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				496037ED1D84AFE8008AC9E1 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49E9A17C1D98242000DD2363 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		496037C91D84AFCA008AC9E1 = {
+			isa = PBXGroup;
+			children = (
+				496037D41D84AFCB008AC9E1 /* MCDreamerPlugin */,
+				496037EE1D84AFE8008AC9E1 /* MCDreamerExtension */,
+				49E9A1801D98242000DD2363 /* MCDreamerPluginTests */,
+				496037EB1D84AFE8008AC9E1 /* Frameworks */,
+				496037D31D84AFCB008AC9E1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		496037D31D84AFCB008AC9E1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				496037D21D84AFCB008AC9E1 /* MCDreamerPlugin.app */,
+				496037EA1D84AFE8008AC9E1 /* MCDreamerExtension.appex */,
+				49E9A17F1D98242000DD2363 /* MCDreamerPluginTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		496037D41D84AFCB008AC9E1 /* MCDreamerPlugin */ = {
+			isa = PBXGroup;
+			children = (
+				496037D61D84AFCB008AC9E1 /* AppDelegate.swift */,
+				496037DB1D84AFCB008AC9E1 /* Assets.xcassets */,
+				496037DD1D84AFCB008AC9E1 /* MainMenu.xib */,
+				496037E01D84AFCB008AC9E1 /* Info.plist */,
+			);
+			path = MCDreamerPlugin;
+			sourceTree = "<group>";
+		};
+		496037EB1D84AFE8008AC9E1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				496037EC1D84AFE8008AC9E1 /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		496037EE1D84AFE8008AC9E1 /* MCDreamerExtension */ = {
+			isa = PBXGroup;
+			children = (
+				493ABCF21F019994000C01E4 /* SourceEditorExtension.swift */,
+				496037F51D84AFE8008AC9E1 /* SourceEditorCommand.swift */,
+				49E9A18A1D98249A00DD2363 /* PluginCommandHandler.swift */,
+				496037F71D84AFE8008AC9E1 /* Info.plist */,
+				496037EF1D84AFE8008AC9E1 /* Supporting Files */,
+			);
+			path = MCDreamerExtension;
+			sourceTree = "<group>";
+		};
+		496037EF1D84AFE8008AC9E1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				496037F01D84AFE8008AC9E1 /* MCDreamerExtension.entitlements */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		49E9A1801D98242000DD2363 /* MCDreamerPluginTests */ = {
+			isa = PBXGroup;
+			children = (
+				49E9A1811D98242000DD2363 /* MCDreamerPluginTests.swift */,
+				49E9A1831D98242000DD2363 /* Info.plist */,
+			);
+			path = MCDreamerPluginTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		496037D11D84AFCA008AC9E1 /* MCDreamerPlugin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 496037E31D84AFCB008AC9E1 /* Build configuration list for PBXNativeTarget "MCDreamerPlugin" */;
+			buildPhases = (
+				496037CE1D84AFCA008AC9E1 /* Sources */,
+				496037CF1D84AFCA008AC9E1 /* Frameworks */,
+				496037D01D84AFCA008AC9E1 /* Resources */,
+				496037FE1D84AFE8008AC9E1 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				496037F91D84AFE8008AC9E1 /* PBXTargetDependency */,
+			);
+			name = MCDreamerPlugin;
+			productName = MCDreamerPlugin;
+			productReference = 496037D21D84AFCB008AC9E1 /* MCDreamerPlugin.app */;
+			productType = "com.apple.product-type.application";
+		};
+		496037E91D84AFE8008AC9E1 /* MCDreamerExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 496037FB1D84AFE8008AC9E1 /* Build configuration list for PBXNativeTarget "MCDreamerExtension" */;
+			buildPhases = (
+				496037E61D84AFE8008AC9E1 /* Sources */,
+				496037E71D84AFE8008AC9E1 /* Frameworks */,
+				496037E81D84AFE8008AC9E1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MCDreamerExtension;
+			productName = MCDreamerExtension;
+			productReference = 496037EA1D84AFE8008AC9E1 /* MCDreamerExtension.appex */;
+			productType = "com.apple.product-type.xcode-extension";
+		};
+		49E9A17E1D98242000DD2363 /* MCDreamerPluginTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49E9A1881D98242000DD2363 /* Build configuration list for PBXNativeTarget "MCDreamerPluginTests" */;
+			buildPhases = (
+				49E9A17B1D98242000DD2363 /* Sources */,
+				49E9A17C1D98242000DD2363 /* Frameworks */,
+				49E9A17D1D98242000DD2363 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				49E9A1851D98242000DD2363 /* PBXTargetDependency */,
+			);
+			name = MCDreamerPluginTests;
+			productName = MCDreamerPluginTests;
+			productReference = 49E9A17F1D98242000DD2363 /* MCDreamerPluginTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		496037CA1D84AFCA008AC9E1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Andrew Dodman";
+				TargetAttributes = {
+					496037D11D84AFCA008AC9E1 = {
+						CreatedOnToolsVersion = 8.0;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Manual;
+					};
+					496037E91D84AFE8008AC9E1 = {
+						CreatedOnToolsVersion = 8.0;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Manual;
+					};
+					49E9A17E1D98242000DD2363 = {
+						CreatedOnToolsVersion = 8.0;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Manual;
+						TestTargetID = 496037D11D84AFCA008AC9E1;
+					};
+				};
+			};
+			buildConfigurationList = 496037CD1D84AFCA008AC9E1 /* Build configuration list for PBXProject "MCDreamerPlugin" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 496037C91D84AFCA008AC9E1;
+			productRefGroup = 496037D31D84AFCB008AC9E1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				496037D11D84AFCA008AC9E1 /* MCDreamerPlugin */,
+				496037E91D84AFE8008AC9E1 /* MCDreamerExtension */,
+				49E9A17E1D98242000DD2363 /* MCDreamerPluginTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		496037D01D84AFCA008AC9E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				496037DC1D84AFCB008AC9E1 /* Assets.xcassets in Resources */,
+				496037DF1D84AFCB008AC9E1 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		496037E81D84AFE8008AC9E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49E9A17D1D98242000DD2363 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		496037CE1D84AFCA008AC9E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				496037D71D84AFCB008AC9E1 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		496037E61D84AFE8008AC9E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				493ABCF31F019994000C01E4 /* SourceEditorExtension.swift in Sources */,
+				496037F61D84AFE8008AC9E1 /* SourceEditorCommand.swift in Sources */,
+				49E9A18B1D98249A00DD2363 /* PluginCommandHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49E9A17B1D98242000DD2363 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49E9A1821D98242000DD2363 /* MCDreamerPluginTests.swift in Sources */,
+				49E9A18C1D98249A00DD2363 /* PluginCommandHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		496037F91D84AFE8008AC9E1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 496037E91D84AFE8008AC9E1 /* MCDreamerExtension */;
+			targetProxy = 496037F81D84AFE8008AC9E1 /* PBXContainerItemProxy */;
+		};
+		49E9A1851D98242000DD2363 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 496037D11D84AFCA008AC9E1 /* MCDreamerPlugin */;
+			targetProxy = 49E9A1841D98242000DD2363 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		496037DD1D84AFCB008AC9E1 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				496037DE1D84AFCB008AC9E1 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		496037E11D84AFCB008AC9E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		496037E21D84AFCB008AC9E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		496037E41D84AFCB008AC9E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = MCDreamerPlugin/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mcdreamer.MCDreamerPlugin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		496037E51D84AFCB008AC9E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = MCDreamerPlugin/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mcdreamer.MCDreamerPlugin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		496037FC1D84AFE8008AC9E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = MCDreamerExtension/MCDreamerExtension.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = MCDreamerExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mcdreamer.MCDreamerPlugin.MCDreamerExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		496037FD1D84AFE8008AC9E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = MCDreamerExtension/MCDreamerExtension.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = MCDreamerExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mcdreamer.MCDreamerPlugin.MCDreamerExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		49E9A1861D98242000DD2363 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = MCDreamerPluginTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mcdreamer.MCDreamerPluginTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MCDreamerPlugin.app/Contents/MacOS/MCDreamerPlugin";
+			};
+			name = Debug;
+		};
+		49E9A1871D98242000DD2363 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = MCDreamerPluginTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mcdreamer.MCDreamerPluginTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MCDreamerPlugin.app/Contents/MacOS/MCDreamerPlugin";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		496037CD1D84AFCA008AC9E1 /* Build configuration list for PBXProject "MCDreamerPlugin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				496037E11D84AFCB008AC9E1 /* Debug */,
+				496037E21D84AFCB008AC9E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		496037E31D84AFCB008AC9E1 /* Build configuration list for PBXNativeTarget "MCDreamerPlugin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				496037E41D84AFCB008AC9E1 /* Debug */,
+				496037E51D84AFCB008AC9E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		496037FB1D84AFE8008AC9E1 /* Build configuration list for PBXNativeTarget "MCDreamerExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				496037FC1D84AFE8008AC9E1 /* Debug */,
+				496037FD1D84AFE8008AC9E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		49E9A1881D98242000DD2363 /* Build configuration list for PBXNativeTarget "MCDreamerPluginTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49E9A1861D98242000DD2363 /* Debug */,
+				49E9A1871D98242000DD2363 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 496037CA1D84AFCA008AC9E1 /* Project object */;
+}
